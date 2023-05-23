@@ -75,4 +75,45 @@ Error: [0m Error: [ERROR] Error getting target(r006-2aaa73bd-dc46-411b-aaf7-98cf
 ╵}
 ```
 
+Destroy Logs
+```
+module.vpes.ibm_is_virtual_endpoint_gateway_ip.endpoint_gateway_ip["vpe-default-2hkz3t-vpc-instance-subnet-b-directlink-gateway-2-ip"]:
+Destroying...
+[id=r006-2aaa73bd-dc46-411b-aaf7-98cf3c21007a/0727-838d6e2f-5379-493e-b341-d8a9ec75df64]
+module.vpes.ibm_is_virtual_endpoint_gateway_ip.endpoint_gateway_ip["vpe-default-2hkz3t-vpc-instance-subnet-b-directlink-gateway-2-ip"]: Destruction
+complete after 1s
+module.vpes.ibm_is_virtual_endpoint_gateway_ip.endpoint_gateway_ip["vpe-default-2hkz3t-vpc-instance-subnet-a-directlink-gateway-1-ip"]:
+Destroying...
+[id=r006-2aaa73bd-dc46-411b-aaf7-98cf3c21007a/0717-b538d156-35b1-43b3-9f0c-c102cb3dff6c]
+module.vpes.ibm_is_virtual_endpoint_gateway_ip.endpoint_gateway_ip["vpe-default-2hkz3t-vpc-instance-subnet-a-directlink-gateway-1-ip"]: Destruction
+complete after 1s
+module.vpes.ibm_is_virtual_endpoint_gateway_ip.endpoint_gateway_ip["vpe-default-2hkz3t-vpc-instance-subnet-c-directlink-gateway-3-ip"]:
+Destroying...
+[id=r006-2aaa73bd-dc46-411b-aaf7-98cf3c21007a/0737-b374e7c5-29f8-49a8-9da9-8c75a0fbdc98]
+module.vpes.ibm_is_virtual_endpoint_gateway_ip.endpoint_gateway_ip["vpe-default-2hkz3t-vpc-instance-subnet-c-directlink-gateway-3-ip"]: Destruction
+complete after 0s
+ 
+module.vpes.ibm_is_subnet_reserved_ip.ip["vpe-default-2hkz3t-vpc-instance-subnet-b-directlink-gateway-2-ip"]:
+Destroying...
+[id=0727-3479487d-23ad-456c-b274-df0029e4ca6b/0727-838d6e2f-5379-493e-b341-d8a9ec75df64]
+module.vpes.ibm_is_subnet_reserved_ip.ip["vpe-default-2hkz3t-vpc-instance-subnet-c-directlink-gateway-3-ip"]:
+Destroying...
+[id=0737-b736bae7-80fa-462e-94f1-a99405c89b24/0737-b374e7c5-29f8-49a8-9da9-8c75a0fbdc98]
+module.vpes.ibm_is_subnet_reserved_ip.ip["vpe-default-2hkz3t-vpc-instance-subnet-b-directlink-gateway-2-ip"]: Destruction
+complete after 1s
+module.vpes.ibm_is_subnet_reserved_ip.ip["vpe-default-2hkz3t-vpc-instance-subnet-c-directlink-gateway-3-ip"]: Destruction
+complete after 1s
+module.vpes.ibm_is_subnet_reserved_ip.ip["vpe-default-2hkz3t-vpc-instance-subnet-a-directlink-gateway-1-ip"]:
+Destroying...
+[id=0717-d10b9267-e847-462c-9ea3-3ea13ec50790/0717-b538d156-35b1-43b3-9f0c-c102cb3dff6c]
+module.vpes.ibm_is_subnet_reserved_ip.ip["vpe-default-2hkz3t-vpc-instance-subnet-a-directlink-gateway-1-ip"]: Destruction
+complete after 0s
+ 
+module.vpes.ibm_is_virtual_endpoint_gateway.vpe["vpc-instance-directlink"]: Destroying...
+[id=r006-2aaa73bd-dc46-411b-aaf7-98cf3c21007a]
+module.vpes.ibm_is_virtual_endpoint_gateway.vpe["vpc-instance-directlink"]: Destruction complete
+after 2s
+
+```
+
 Now, if you see the target value "r006-2aaa73bd-dc46-411b-aaf7-98cf3c21007a" that's been already destroyed.
